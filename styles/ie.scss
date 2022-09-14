@@ -1,0 +1,49 @@
+
+// IE not supported notice 
+.IE-notsupported {
+    display: none;
+  }
+  
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .IE-notsupported {
+      display: block;
+      position: fixed;
+      z-index: 29;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(166deg, rgba(3,177,217,1) 0%, rgba(3,127,156,1) 100%);
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 1rem * 2;
+      margin: 1rem 1rem 1rem;
+      border-radius: 12px;
+      box-shadow: 0 5px 18px 3px rgba(3,177,217, .3);
+  
+      img {
+        width: 36px;
+        margin-right: 1rem * 2;
+        opacity: .4;
+      }
+  
+      p {
+        padding: 0;
+        font-weight: normal;
+        font-size: 16px;
+        margin: 0;
+        opacity: .6;
+        padding-top: 1rem/4;
+      }
+  
+      a {
+        font-weight: bold;
+        text-decoration: underline;
+        color: #fff;
+      }
+    }
+  }
